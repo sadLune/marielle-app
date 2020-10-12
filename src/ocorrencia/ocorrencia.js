@@ -1,0 +1,22 @@
+export default { 
+    num_bo: '',
+    dataocorrencia: '',
+    horaocorrencia: '',
+    logradouro: '',
+    numero: '',
+    bairro: '',
+    cidade: '',
+    uf: '',
+    descricaolocal: '',
+    solucao: '',
+    delegacia_nome: '',
+    nomepessoa: '',
+    rg: '',
+    naturalidade: '',
+    nacionalidade: '',
+    sexo: '',
+    datanascimento: '',
+    estadocivil: '',
+    profissao: '',
+    grauinstrucao: ''
+}
