@@ -7,9 +7,9 @@ import Geo from '../ocorrencia/ocorrencia-geo'
 
 export default props => (
     <HashRouter>
-        <Route path='/relatorios' component={Relatorio} />
-        <Route path='/reportar' component={Form} />
-        <Route path='/' component={Geo} />
-        <Redirect from='*' to='/' />
+        <Route path='/ocorrencias/dashboard' component={Relatorio} />
+        <Route path='/ocorrencias/novo' component={Form} />
+        <Route path='/ocorrencias/geo' component={Geo} />
+        <Redirect from='*' to='/ocorrencias/geo' />
     </HashRouter>
 )
