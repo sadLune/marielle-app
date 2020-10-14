@@ -1,0 +1,22 @@
+@import "variables.scss";
+
+.navbar-inverse {
+    background-color: $lightColor;
+    border: 0;
+    border-bottom: 1px solid $highlightColor;
+    border-radius: 0 0 4px 4px;
+}
+
+ul.nav li {
+    color: $highlightColor;
+    font-size: $fontSize;
+}
+
+ul.nav li:hover {
+    background-color: $secondaryColor;
+}
+
+ul.nav li a {
+    display: block;
+    padding: 1.5rem 3rem 1.5rem 2rem;
+}

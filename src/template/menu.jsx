@@ -1,10 +1,11 @@
 import React from 'react'
 
+//TODO: colocar icones no menu
 export default props => (
     <nav className='navbar navbar-inverse bg-inverse'>
         <div className='container'>
             <div className='navbar-header'>
-                <a className='navbar-brand' href='#'>
+                <a className='navbar-brand' href='#/ocorrencias/geo'>
                     Logo Marielle
                 </a>
             </div>

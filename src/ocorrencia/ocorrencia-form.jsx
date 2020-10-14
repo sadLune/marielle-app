@@ -18,7 +18,7 @@ export default class RelatorioForm extends Component {
 
     cadastrar() {
         console.log(this.state)
-        axios.post(process.env.REACT_APP_BACKEND_URL + '/raw-endpoint', this.state)
+        axios.post(process.env.REACT_APP_BACKEND_URL + '/raw_registros_ocorrencias_ssp_sp_gov_brs', this.state)
             .then(resp => console.log(resp))
     }
 
