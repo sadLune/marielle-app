@@ -51,7 +51,7 @@ export default class RelatorioForm extends Component {
                 <ul className="flex-outer">
                     {fields}
                     <li className="form-submit">
-                        <button onClick={this.cadastrar}>Registrar</button> 
+                        <input onClick={this.cadastrar} value='Registrar' /> 
                     </li>
                 </ul>
             </div>

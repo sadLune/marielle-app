@@ -4,10 +4,6 @@
     margin: 1.5rem;
 }
 
-.form-header {
-    padding-bottom: 1rem;
-}
-
 .form-content * {
     box-sizing: border-box;
 }
@@ -62,6 +58,7 @@
     background: $highlightColor;
     color: $lightColor;
     text-transform: uppercase;
+    text-align: center;
     letter-spacing: .06em;
     border-radius: 4px;
 }

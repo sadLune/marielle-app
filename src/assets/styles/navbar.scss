@@ -7,8 +7,14 @@
     border-radius: 0 0 4px 4px;
 }
 
-ul.nav li {
-    color: $highlightColor;
+/* TODO: remover assim que tivermos um logo */
+.navbar-brand {
+    color: $highlightColor !important;
+    padding: 1.5rem 3rem 1.5rem 2rem;
+}
+
+ul.nav li a {
+    color: $highlightColor !important;
     font-size: $fontSize;
 }
 
