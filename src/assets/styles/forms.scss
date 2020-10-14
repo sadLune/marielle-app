@@ -51,7 +51,7 @@
     background: $lightColor;
 }
 
-.flex-outer li.form-submit input {
+.flex-outer li.form-submit button {
     margin-left: auto;
     padding: 8px 16px;
     border: none;
@@ -63,6 +63,6 @@
     border-radius: 4px;
 }
 
-.flex-outer li.form-submit input:hover {
+.flex-outer li.form-submit button:hover {
     cursor: pointer;
 }

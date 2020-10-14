@@ -17,9 +17,19 @@ export default class RelatorioForm extends Component {
     }
 
     cadastrar() {
-        console.log(this.state)
         axios.post(process.env.REACT_APP_BACKEND_URL + '/raw_registros_ocorrencias_ssp_sp_gov_brs', this.state)
-            .then(resp => console.log(resp))
+            .then(resp => {
+                if(resp.status == 200) {
+                    console.log(resp.data.message)
+                    window.location.href = process.env.REACT_APP_BACKEND_URL + '/raw_registros_ocorrencias_ssp_sp_gov_brs'
+                    return;
+                }
+                //TODO: fazer tratamento de erros
+                if(resp && resp.data && resp.data.data) {
+                    console.log(resp)
+                    //this.setState(resp.config.data)
+                }
+            })
     }
 
     handleChange(e) {
@@ -43,15 +53,11 @@ export default class RelatorioForm extends Component {
             <div className='form'>
                 <Header name='Ocorrências' small='Cadastro'></Header>
                 <div id="error_explanation">
-                    <h2>Erros:</h2>
-                    <ul>
-                        <li>erros</li>
-                    </ul>
                 </div>
                 <ul className="flex-outer">
                     {fields}
                     <li className="form-submit">
-                        <input onClick={this.cadastrar} value='Registrar' /> 
+                        <button onClick={this.cadastrar}>Registrar</button>
                     </li>
                 </ul>
             </div>
